@@ -1,0 +1,157 @@
+we messed up the addresses :( make the bytes match up now
+
+|--------------------|------------------------|--------------------------------------------------------------------------------|-------------------------------|
+| Ram Address        | Name                   | Description                                                                    | Size (in bytes)               |
+|--------------------|------------------------|--------------------------------------------------------------------------------|-------------------------------|
+| $00                | cm_frames              | The current frame of the codemasters logo                                      | 1                             |
+| $01                | control0               |                                                                                | 1                             |
+| $02                | control1               |                                                                                | 1                             |
+| $03                | interon                |                                                                                | 1                             |
+| $04                | seed                   |                                                                                | 3                             |
+| $07                | pad                    |                                                                                | 1                             |
+| $08                | debounce               |                                                                                | 1                             |
+| $09                | y.scroll               | y screen scroll                                                                | 1                             |
+| $0A                | x.scroll               | x screen scroll                                                                | 1                             |
+| $0B                | flyflag                |                                                                                | 1                             |
+| $0C                | vrampointer            |                                                                                | 1                             |
+| $0D                | bankno                 |                                                                                | 1                             |
+| $0E                | spriteblockpointer     |                                                                                | 1                             |
+| $0F                | blockpointer           |                                                                                | 1                             |
+| $10                | counter                |                                                                                | 1                             |
+| $11                | toplevvar1             |                                                                                | 1                             |
+| $12                | toplevvar2             |                                                                                | 1                             |
+| $13                | toplevvar3             |                                                                                | 1                             |
+| $14                | toplevvar4             |                                                                                | 1                             |
+| $15                | toplevvar5             |                                                                                | 1                             |
+| $16                | toplevvar6             |                                                                                | 1                             |
+| $17                | toplevvar7             |                                                                                | 1                             |
+| $18                | toplevvar8             |                                                                                | 1                             |
+| $19                | toplevvar9             |                                                                                | 1                             |
+| $1A                | toplevvar10            |                                                                                | 1                             |
+| $1B                | address                |                                                                                | 2                             |
+| $1D                | address1               |                                                                                | 2                             |
+| $1F                | address2               |                                                                                | 2                             |
+| $21                | address3               |                                                                                | 2                             |
+| $23                | address4               |                                                                                | 2                             |
+| $25                | address5               |                                                                                | 2                             |
+| $27                | address6               |                                                                                | 2                             |
+| $29                | address7               |                                                                                | 2                             |
+| $2B                | address8               |                                                                                | 2                             |
+| $2D                | address9               |                                                                                | 2                             |
+| $2F                | tempx                  |                                                                                | 1                             |
+| $30                | tempy                  |                                                                                | 1                             |
+| $31                | temp                   |                                                                                | 1                             |
+| $32                | temp1                  |                                                                                | 1                             |
+| $33                | temp2                  |                                                                                | 1                             |
+| $34                | temp3                  |                                                                                | 1                             |
+| $35                | temp4                  |                                                                                | 1                             |
+| $36                | temp5                  |                                                                                | 1                             |
+| $37                | temp6                  |                                                                                | 1                             |
+| $38                | temp7                  |                                                                                | 1                             |
+| $39                | temp8                  |                                                                                | 1                             |
+| $3A                | temp9                  |                                                                                | 1                             |
+| $3B                | scrxl                  |                                                                                | 1                             |
+| $3C                | scrxh                  |                                                                                | 1                             |
+| $3D                | mapstrip               |                                                                                | 1                             |
+| $3E                | attripointer           |                                                                                | 1                             |
+| $3F                | blockattri             |                                                                                | 1                             |
+| $40                | mappointer             |                                                                                | 2                             |
+| $42                | mapno                  |                                                                                | 1                             |
+| $43                | solidfound             |                                                                                | 1                             |
+| $44                | pause                  |                                                                                | 1                             |
+| $45                | dontpause              |                                                                                | 1                             |
+| $46                | palversion             |                                                                                | 1                             |
+| $47                | scrolldir              |                                                                                | 1                             |
+| $48                | lives                  |                                                                                | 1                             |
+| $49                | hearts                 |                                                                                | 1                             |
+| $4A                | heartcounter           |                                                                                | 1                             |
+| $4B                | noofparas              |                                                                                | 1                             |
+| $4C                | fadecounter            |                                                                                | 1                             |
+| $4D                | fadetemp               |                                                                                | 1                             |
+| $4E                | heartxl                |                                                                                | 1                             |
+| $4F                | heartxh                |                                                                                | 1                             |
+| $50                | hearty                 |                                                                                | 1                             |
+| $51                | changedblockspointer   |                                                                                | 1                             |
+| ------------------ | ---------------------- | ------------------------ END OF ZERO PAGE ------------------------------------ | ----------------------------- |
+| ------------------ | ---------------------- | ------------- START OF REGULAR VARS (starts at $300) ------------------------- | ----------------------------- |
+| $300               | finishedloop           |                                                                                | 1                             |
+| $301               | chrfound               |                                                                                | 1                             |
+| $302               | blockfound             |                                                                                | 1                             |
+| $303               | blockx                 |                                                                                | 1                             |
+| $304               | blocky                 |                                                                                | 1                             |
+| $305               | minmap                 |                                                                                | 1                             |
+| $306               | maxmap                 |                                                                                | 1                             |
+| $307               | robindx                | robin's subpixel x position                                                    | 1                             |
+| $308               | robinxl                | robin's x position's low byte                                                  | 1                             |
+| $309               | robinxh                | robin's x position's high byte                                                 | 1                             |
+| $30A               | robiny                 | robin's y position                                                             | 1                             |
+| $30B               | robinonscrx            |                                                                                | 1                             |
+| $30C               | leftright              | whether the player is pressing left (-1), right (1), or not moving at all (0)  | 1                             |
+| $30D               | oleftright             | o(ld)leftright holds the direction the player is facing (same format as above) | 1                             |
+| $30E               | orobinxl               | robin's old x position (low byte)                                              | 1                             |
+| $30F               | orobinxh               | robin's old x position (high byte)                                             | 1                             |
+| $310               | orobiny                | robin's old y position                                                         | 1                             |
+| $311               | runcount               | robin's velocity (caps at 47 units)                                            | 1                             |
+| $312               | robindir               |                                                                                | 1                             |
+| $313               | robinanim              |                                                                                | 1                             |
+| $314               | robinfiring            |                                                                                | 1                             |
+| $315               | robincrouch            |                                                                                | 1                             |
+| $316               | robinheight            |                                                                                | 1                             |
+| $317               | robinjumping           |                                                                                | 1                             |
+| $318               | robingravity           |                                                                                | 1                             |
+| $319               | robinlook              |                                                                                | 1                             |
+| $31A               | robinladder            |                                                                                | 1                             |
+| $31B               | robinladdercounter     |                                                                                | 1                             |
+| $31C               | robininvinc            | robin's invincibility timer                                                    | 1                             |
+| $31D               | robinbehind            |                                                                                | 1                             |
+| $31E               | robinjustjumped        |                                                                                | 1                             |
+| $31F               | oldxl                  |                                                                                | 1                             |
+| $320               | oldxh                  |                                                                                | 1                             |
+| $321               | oldy                   |                                                                                | 1                             |
+| $322               | oldladder              |                                                                                | 1                             |
+| $323               | killed                 | countdown timer after robin's death                                            | 1                             |
+| $324               | deadarrowx             |                                                                                | 2                             |
+| $326               | deadarrowy             |                                                                                | 1                             |
+| $327               | deadarrowcount         |                                                                                | 1                             |
+| $328               | animatedoor            |                                                                                | 1                             |
+| $329               | doorx                  |                                                                                | 1                             |
+| $32A               | doory                  |                                                                                | 1                             |
+| $32B               | juststartedlife        |                                                                                | 1                             |
+| $32C               | hipos                  |                                                                                | 1                             |
+| $32D               | ingame                 | is the player in game? or is he in a menu?                                     | 1                             |
+| $32E               | treasures              | treasure data                                                                  | 1                             |
+| $334               | coinnum                |                                                                                | 1                             |
+| $335               | coinnumx               |                                                                                | 1                             |
+| $336               | coinnumy               |                                                                                | 1                             |
+| $337               | coinnumcount           |                                                                                | 1                             |
+| $338               | attributes             |                                                                                | 112 (7 * 8 * 2)               |
+| $3A8               | completedgame          |                                                                                | 1                             |
+| $3A9               | extravars              |                                                                                | 128 (noofextravars variable)  |
+| $429               | arrowxl                |                                                                                | 8 (noofarrows variable)       |
+| $431               | arrowxh                |                                                                                | 8 (noofarrows)                |
+| $439               | arrowy                 |                                                                                | 8 (noofarrows)                |
+| $441               | arrowdir               |                                                                                | 8 (noofarrows)                |
+| $449               | arrowcanon             |                                                                                | 8 (noofarrows)                |
+| $451               | arrowcounter           |                                                                                | 8 (noofarrows)                |
+| $459               | spitterxl              |                                                                                | 4 (noofspitters variable)     |
+| $45D               | spitterxh              |                                                                                | 4 (noofspitters)              |
+| $461               | spittery               |                                                                                | 4 (noofspitters)              |
+| $465               | spitterdir             |                                                                                | 4 (noofspitters)              |
+| $469               | batxl                  |                                                                                | 4 (noofbats variable)         |
+| $46D               | batxh                  |                                                                                | 4 (noofbats)                  |
+| $471               | baty                   |                                                                                | 4 (noofbats)                  |
+| $475               | batxdir                |                                                                                | 4 (noofbats)                  |
+| $479               | batydir                |                                                                                | 4 (noofbats)                  |
+| $47D               | batwingcount           |                                                                                | 4 (noofbats)                  |
+| $481               | onscreenrou            |                                                                                | 16 (noofonscreens variable)   |
+| $491               | onscreenxl             |                                                                                | 16 (noofonscreens)            |
+| $4A1               | onscreenxh             |                                                                                | 16 (noofonscreens)            |
+| $4C1               | onscreeny              |                                                                                | 16 (noofonscreens)            |
+| $4D1               | onscreencount1         |                                                                                | 16 (noofonscreens)            |
+| $4E1               | onscreencount2         |                                                                                | 16 (noofonscreens)            |
+| $4F1               | heartstable            |                                                                                | 48                            |
+| $521               | filledblockbuffer      |                                                                                | 1                             |
+| $522               | riseup                 |                                                                                | 1                             |
+| $523               | fadecolours            |                                                                                | 32                            |
+| $543               | changedblocks          |                                                                                | 66 (3 * maxchangedblocks)     |
+| $585               | score                  |                                                                                | 7                             |
