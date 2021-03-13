@@ -117,7 +117,7 @@
 | $32B               | juststartedlife        |                                                                                | 1                             |
 | $32C               | hipos                  |                                                                                | 1                             |
 | $32D               | ingame                 | is the player in game? or is he in a menu?                                     | 1                             |
-| $32E               | treasures              | treasure data                                                                  | 1                             |
+| $32E               | treasures              | treasure data                                                                  | 6                             |
 | $334               | coinnum                |                                                                                | 1                             |
 | $335               | coinnumx               |                                                                                | 1                             |
 | $336               | coinnumy               |                                                                                | 1                             |
