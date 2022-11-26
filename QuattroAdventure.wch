@@ -1,0 +1,40 @@
+SystemID NES
+0307	b	u	0	RAM	X sub position - "robindx"
+0308	w	u	0	RAM	X position - "robinxl", "robinxh"
+030A	b	u	0	RAM	Y position - "robiny"
+0311	b	u	0	RAM	X speed - "runcount"
+0318	b	s	0	RAM	Y speed - "robingravity"
+0	S	_	1		
+030B	b	u	0	RAM	Screen relative X position - "robinonscrx"
+030C	b	s	0	RAM	State - "leftright"
+030D	b	s	0	RAM	Old state - "oleftright"
+030E	w	u	0	RAM	Old X position - "orobinxl", "orobinxh"
+0310	b	u	0	RAM	Old Y position - "orobiny"
+0312	b	u	0	RAM	Title screen value - "robindir"
+0313	b	u	0	RAM	Running animation - "robinanim"
+0314	b	u	0	RAM	Firing animation - "robinfiring"
+0315	b	u	0	RAM	Crouching animation - "robincrouch"
+0316	b	u	0	RAM	Height - "robinheight"
+0317	b	u	0	RAM	Is jumping - "robinjumping"
+0319	b	u	0	RAM	Face animation - "robinlook"
+031A	b	u	0	RAM	On ladder - "robinladder"
+031B	b	u	0	RAM	Ladder reclimb timer - "robinladdercounter"
+031C	b	u	0	RAM	Invincibility timer - "robininvinc"
+031D	b	u	0	RAM	"robinbehind" - unknown
+031E	b	u	0	RAM	On first jump frame - "robinjustjumped"
+031F	w	u	0	RAM	Respawn X - "oldxl", "oldxh"
+0321	b	u	0	RAM	Respawn Y - "oldy"
+0322	b	u	0	RAM	Respawn on ladder - "oldladder"
+0323	b	u	0	RAM	Death countdown - "killed"
+0324	w	u	0	RAM	Arrow kill X position - "deadarrowx"
+0325	b	u	0	RAM	Arrow kill Y position - "deadarrowy"
+0326	b	u	0	RAM	Used arrow timer - "deadarrowcount"
+0	S	_	1		
+0009	b	u	0	RAM	Vertical screen scroll
+000A	b	u	0	RAM	Horizontal screen scroll
+0042	b	u	0	RAM	Room ID
+0048	b	u	0	RAM	Life count
+0049	b	u	0	RAM	Heart count
+0640	d	u	0	RAM	Key data bitfield
+0650	d	u	0	RAM	Enemy data bitfield
+

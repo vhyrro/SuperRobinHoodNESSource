@@ -1,0 +1,244 @@
+﻿R:0000:cm_frames
+R:0001:control0
+R:0002:control1
+R:0003:interon
+R:0004-0006:seed
+R:0007:pad
+R:0008:debounce
+R:0009:yscroll
+R:000A:xscroll
+R:000B:flyflag
+R:000C:vrampointer
+R:000D:bankno
+R:000E:spriteblockpointer
+R:000F:blockpointer
+R:0010:counter
+R:0011:toplevvar1
+R:0012:toplevvar2
+R:0013:toplevvar3
+R:0014:toplevvar4
+R:0015:toplevvar5
+R:0016:toplevvar6
+R:0017:toplevvar7
+R:0018:toplevvar8
+R:0019:toplevvar9
+R:001A:toplevvar10
+R:001B-001C:address
+R:001D-001E:address1
+R:001F-0020:address2
+R:0021-0022:address3
+R:0023-0024:address4
+R:0025-0026:address5
+R:0027-0028:address6
+R:0029-002A:address7
+R:002B-002C:address8
+R:002D-002E:address9
+R:002F:tempx
+R:0030:tempy
+R:0031:temp
+R:0032:temp1
+R:0033:temp2
+R:0034:temp3
+R:0035:temp4
+R:0036:temp5
+R:0037:temp6
+R:0038:temp7
+R:0039:temp8
+R:003A:temp9
+R:003B:scrxl
+R:003C:scrxh
+R:003D:mapstrip
+R:003E:attripointer
+R:003F:blockattri
+R:0040-0041:mappointer
+R:0042:mapno
+R:0043:solidfound
+R:0044:pause
+R:0045:dontpause
+R:0046:palversion
+R:0047:scrolldir
+R:0048:lives
+R:0049:hearts
+R:004A:heartcounter
+R:004B:noofparas
+R:004C:fadecounter
+R:004D:fadetemp
+R:004E:heartxl
+R:004F:heartxh
+R:0050:hearty
+R:0300:finishedloop
+R:0301:chrfound
+R:0302:blockfound
+R:0303:blockx
+R:0304:blocky
+R:0305:minmap
+R:0306:maxmap
+R:0307:robindx
+R:0308:robinxl
+R:0309:robinxh
+R:030A:robiny
+R:030B:robinonscrx
+R:030C:leftright
+R:030D:oleftright
+R:030E:orobinxl
+R:030F:orobinxh
+R:0310:orobiny
+R:0311:runcount
+R:0312:robindir
+R:0313:robinanim
+R:0314:robinfiring
+R:0315:robincrouch
+R:0316:robinheight
+R:0317:robinjumping
+R:0318:robingravity
+R:0319:robinlook
+R:031A:robinladder
+R:031B:robininvinc
+R:031C:robinbehind
+R:031D:robinjustjumped
+R:031E:oldxl
+R:031F:oldxh
+R:0320:oldy
+R:0321:oldladder
+R:0322:killed
+R:0323-0324:deadarrowx
+R:0325:deadarrowy
+R:0326:deadarrowcount
+R:0327:animatedoor
+R:0328:doorx
+R:0329:doory
+R:032A:juststartedlife
+R:032B:hipos
+R:032C:ingame
+R:032D-0332:treasures
+R:0333:coinnum
+R:0334:coinnumx
+R:0335:coinnumy
+R:0336:coinnumcount
+R:0337-03A6:attributes
+R:03A7:completedgame
+R:03A8-0427:extravars
+R:0428-042F:arrowxl
+R:0430-0437:arrowxh
+R:0438-043F:arrowy
+R:0440-0447:arrowdir
+R:0448-044F:arrowcanon
+R:0450-0457:arrowcounter
+R:0458-045B:spitterxl
+R:045C-045F:spitterxh
+R:0460-0463:spittery
+R:0464-0467:spitterdir
+R:0468-046B:batxl
+R:046C-046F:batxh
+R:0470-0473:baty
+R:0474-0477:batxdir
+R:0478-047B:batydir
+R:047C-047F:batwingcount
+R:0480-048F:onscreenrou
+R:0490-049F:onscreenxl
+R:04A0-04AF:onscreenxh
+R:04B0-04BF:onscreeny
+R:04C0-04CF:onscreencount1
+R:04D0-04DF:onscreencount2
+R:04E0-050F:heartstable
+R:0510:riseup
+R:0511-0530:fadecolours
+R:0531-0572:changedblocks
+R:0640-065F:extrason
+R:0660-066E:secret
+P:266DA:restupdatecoin:why is it called this???
+P:2C274:changebank12
+P:2C27C:changebank13
+P:2C2F8:MainLoopBegin
+P:2C366:CheckForCheat
+P:2C370:Normal3Lives
+P:2C38C:SetDefaultMap:Load the value of 5 into the accumulator and set the map accordingly\nthe mapno where robin spawns is map number 5
+P:2C393:InGameLoop
+P:2C3B1:C2C3B1:"pause" will have a value of 1 if the game is paused
+P:2C3B7::#10 = stmask
+P:2C3BB::source code claims that this value == #256-4*6
+P:2C3BF:DeterminePausePosition:This small section determines at which y position\nto display the PAUSE menu depending on the position\nof robin\n\nThe following instruction sets the default value at which the pause menu will be placed ($50)
+P:2C3C4::Load robin's y position and compare it to $7C
+P:2C3C6::if the y position is lower than 7C set Y to $80 (lower portion of screen) in the next instruction
+P:2C3CE::actually print the pause screen
+P:2C422:EndOfMainLoop
+P:2C428:CheckIfRobinKilled:load the "killed" variable into the a register
+P:2C42B::if it's 0 then branch away
+P:2C47A:ZoomInHearts
+P:2C480::count down from $27 all the way down to $1E.\npresumably this is where the loading of the level itself happens?\nonce it's less than $1E do not perform any further operations.\nrobin is not displayed until juststartedlife is $00
+P:2C4E4:C2C4E4:"pause" will be 1 if the game is paused
+P:2C503:pausenoton
+P:2C511:setfade
+P:2C58F:ResetRobinVariables
+P:2C5A4:ResetRobinVariables1:? dunno why this subroutine is named the way it is
+P:2CC54::Load the value oleftright into the A register and then check\nwhether the value is negative
+P:2CC59:MoveRobinRight
+P:2CC6A::if the subpixel value didn't overflow then branch
+P:2CC6C::else increment robin's high byte
+P:2CC6F:MoveRobinRightRTS
+P:2CC70:MoveRobinLeft:Store the current value of the Y register into temp\nThis value will later be subtracted from Robin's x position
+P:2CC76::subtract from robin's subpixel position then store it
+P:2CC7F::subtract robinxl from the previous value in the Y register
+P:2CC84::if we haven't underflowed from our previous subtraction then branch
+P:2CC86::else decrement the high byte of robin's x position\n(the low byte underflowed)
+P:2CC8D::if robin's high byte is equal to 0 then return from the subroutine
+P:2CCC8:RobinMoveLeftRTS
+P:2D3C8:ResetExtraVars
+P:2D3E4:ResetExtras
+P:2D3F9:pickupcollision1
+P:2D3FE:pickupcollision
+P:2D410:crouchcollide
+P:2D41B:nowthex:the names mason what do they mean
+P:2D426:nopickcoll
+P:2D427-2D42E:bitpattern
+P:2D42F:checkifextraon
+P:2D431:checkifdooron
+P:2D441:turnoffextra
+P:2D445:turnoffdoor
+P:2D458:checkonscreensides
+P:2D45A:checkonscreensides1
+P:2D533:DoorRoutines
+P:2DF8A:jumpbackfromscreenrou
+P:2E156:calconscreenx
+P:2E8C6:updateblock
+P:2E8CC:updateheartorcoin
+P:2ECF4:PrintSprite
+P:2F1E0:CopyBlockOfCompactedChars:??? Unknown\n
+P:2F3AC:random
+P:2F3DE:_CheckForPause
+P:2F453:clearspriteblock
+P:2F494:turninterofffade
+P:2F56F:ResetScore
+P:2FBFB:EnterNewMap
+P:2FC19:internoton
+P:2FD95-2FDE2:mapinfo:A table of information about every map in the game,\nincluding information about palletes and offsets.
+G:2000:PpuControl_2000:7  bit  0\n---- ----\nVPHB SINN\n|||| ||||\n|||| ||++- Base nametable address\n|||| ||    (0 = $2000; 1 = $2400; 2 = $2800; 3 = $2C00)\n|||| |+--- VRAM address increment per CPU read/write of PPUDATA\n|||| |     (0: add 1, going across; 1: add 32, going down)\n|||| +---- Sprite pattern table address for 8x8 sprites\n||||       (0: $0000; 1: $1000; ignored in 8x16 mode)\n|||+------ Background pattern table address (0: $0000; 1: $1000)\n||+------- Sprite size (0: 8x8; 1: 8x16)\n|+-------- PPU master/slave select\n|          (0: read backdrop from EXT pins; 1: output color on EXT pins)\n+--------- Generate an NMI at the start of the\n           vertical blanking interval (0: off; 1: on)
+G:2001:PpuMask_2001:7  bit  0\n---- ----\nBGRs bMmG\n|||| ||||\n|||| |||+- Display type: (0: color, 1: grayscale)\n|||| ||+-- 1: Show background in leftmost 8 pixels of screen, 0: Hide\n|||| |+--- 1: Show sprites in leftmost 8 pixels of screen, 0: Hide\n|||| +---- 1: Show background\n|||+------ 1: Show sprites\n||+------- Emphasize red\n|+-------- Emphasize green\n+--------- Emphasize blue
+G:2002:PpuStatus_2002:7  bit  0\n---- ----\nVSO. ....\n|||| ||||\n|||+-++++- Least significant bits previously written into a PPU register\n|||        (due to register not being updated for this address)\n||+------- Sprite overflow. The intent was for this flag to be set\n||         whenever more than eight sprites appear on a scanline, but a\n||         hardware bug causes the actual behavior to be more complicated\n||         and generate false positives as well as false negatives; see\n||         PPU sprite evaluation. This flag is set during sprite\n||         evaluation and cleared at dot 1 (the second dot) of the\n||         pre-render line.\n|+-------- Sprite 0 Hit.  Set when a nonzero pixel of sprite 0 overlaps\n|          a nonzero background pixel; cleared at dot 1 of the pre-render\n|          line.  Used for raster timing.\n+--------- Vertical blank has started (0: not in vblank; 1: in vblank).\n           Set at dot 1 of line 241 (the line *after* the post-render\n           line, false); cleared after reading $2002 and at dot 1 of the\n           pre-render line.
+G:2003:OamAddr_2003:Set OAM address - Write only
+G:2004:OamData_2004:Read/Write OAM data
+G:2005:PpuScroll_2005:Set PPU scroll, write twice - Write only
+G:2006:PpuAddr_2006:Set PPU address, write twice - Write only
+G:2007:PpuData_2007:Read/Write VRAM
+G:4000:Sq0Duty_4000:DDLC VVVV\nDuty (D), envelope loop / length counter halt (L), constant volume (C), volume/envelope (V)
+G:4001:Sq0Sweep_4001:EPPP NSSS\nSweep unit: enabled (E), period (P), negate (N), shift (S)
+G:4002:Sq0Timer_4002:TTTT TTTT\nTimer low (T)
+G:4003:Sq0Length_4003:LLLL LTTT\nLength counter load (L), timer high (T)
+G:4004:Sq1Duty_4004:DDLC VVVV\nDuty (D), envelope loop / length counter halt (L), constant volume (C), volume/envelope (V)
+G:4005:Sq1Sweep_4005:EPPP NSSS\nSweep unit: enabled (E), period (P), negate (N), shift (S)
+G:4006:Sq1Timer_4006:TTTT TTTT\nTimer low (T)
+G:4007:Sq1Length_4007:LLLL LTTT\nLength counter load (L), timer high (T)
+G:4008:TrgLinear_4008:CRRR RRRR\nLength counter halt / linear counter control (C), linear counter load (R)
+G:400A:TrgTimer_400A:TTTT TTTT\nTimer low (T)
+G:400B:TrgLength_400B:LLLL LTTT\nLength counter load (L), timer high (T)
+G:400C:NoiseVolume_400C:--LC VVVV\nEnvelope loop / length counter halt (L), constant volume (C), volume/envelope (V)
+G:400E:NoisePeriod_400E:L--- PPPP\nLoop noise (L), noise period (P)
+G:400F:NoiseLength_400F:LLLL L---\nLength counter load (L)
+G:4010:DmcFreq_4010:IL-- RRRR\nIRQ enable (I), loop (L), frequency (R)
+G:4011:DmcCounter_4011:-DDD DDDD\nLoad counter (D)
+G:4012:DmcAddress_4012:AAAA AAAA\nSample address (A)
+G:4013:DmcLength_4013:LLLL LLLL\nSample length (L)
+G:4014:SpriteDma_4014:Writing $XX will upload 256 bytes of data from CPU page $XX00-$XXFF to the internal PPU OAM.
+G:4015:ApuStatus_4015:Read:\nIF-D NT21\nDMC interrupt (I), frame interrupt (F), DMC active (D), length counter > 0 (N/T/2/1)\n\nWrite:\n---D NT21\nEnable DMC (D), noise (N), triangle (T), and pulse channels (2/1)
+G:4016:Ctrl1_4016:Read (NES - input):\n---4 3210\nRead data from controller port #1.\n\nWrite:\n---- ---A\nOutput data (strobe) to both controllers.
+G:4017:Ctrl2_FrameCtr_4017:Read (NES - input):\n---4 3210\nRead data from controller port #2.\n\nWrite (Frame counter): MI-- ----\nMode (M, 0 = 4-step, 1 = 5-step), IRQ inhibit flag (I)
